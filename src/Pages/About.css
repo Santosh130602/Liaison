@@ -1,0 +1,40 @@
+.About{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-about{
+    flex: 0.5;
+    text-align: left;
+    margin-left: 6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.right-about{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: -40px; */
+}
+
+
+@media (max-width: 768px) {
+    .About {
+      flex-direction: column;
+    }
+  
+    .left-about {
+      /* grid-template-columns: 1fr; */
+      width: 100%;
+    }
+  
+    .right-about {
+      grid-column: span 1;
+    }
+
+  }
+  

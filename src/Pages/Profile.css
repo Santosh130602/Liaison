@@ -1,0 +1,250 @@
+/* 
+.profile-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .left-panel {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .left-panel select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .right-panel {
+    width: 80%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .edit-photo{
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    align-items: center;
+  }
+  .edit-name {
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-field {
+    margin-bottom: 10px;
+  }
+  
+  .profile-field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-field input,
+  .profile-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+   */
+
+
+
+
+
+
+   /* src/Profile.css */
+
+.profile-container {
+    display: flex;
+    height: 100%;
+  }
+  
+  .left-panel {
+    width: 20%;
+    background-color: #f0f0f0;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .functionality-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .icon-size{
+      font-size: 1.3rem;
+  }
+  .functionality-list li {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .functionality-list li:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .functionality-list li i {
+    margin-right: 10px;
+  }
+  
+  .right-panel {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: left;
+    /* align-items: center;
+    justify-content: center; */
+    margin-left: 10%;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: left;
+    margin-bottom: 20px;
+
+  }
+  
+  .profile-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .edit-photo {
+    color: blue;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 2.5rem;
+    text-align: left;
+  }
+  .profile-header-right{
+      margin-left: 2rem;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .profile-name {
+    margin-left: 20px;
+    font-size: 24px;
+    margin-top: 3rem;
+  }
+  
+  .edit-name {
+    color: blue;
+    cursor: pointer;
+    margin-left: 3rem;
+    margin-top: 5px;
+    display: flex;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-field {
+    margin-bottom: 10px;
+  }
+  
+  .profile-field label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .profile-field input,
+  .profile-field textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #02080e;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 20%;
+  }
+
+  
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Icons (using Font Awesome for example) */
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+  
+  .functionality-list li i.fa-home::before {
+    content: "\f015";
+  }
+  
+  .functionality-list li i.fa-search::before {
+    content: "\f002";
+  }
+  
+  .functionality-list li i.fa-bell::before {
+    content: "\f0f3";
+  }
+  
+  .functionality-list li i.fa-envelope::before {
+    content: "\f0e0";
+  }
+  
+
+
+  @media (max-width: 768px) {
+      .profile-header{
+          flex-direction: column;
+      }
+  }

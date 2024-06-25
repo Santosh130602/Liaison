@@ -1,0 +1,170 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background-color: #007bff;  */
+    /* color: white; Text color */
+    position: relative; 
+  }
+  
+  .logo img {
+    height: 80px; 
+    margin-left: 30px;
+    padding: 10px;
+
+  }
+  
+  .element {
+    display: flex;
+    /* align-items: center; */
+    gap: 2rem;
+  }
+  
+  .element ul {
+    list-style-type: none;
+    padding: 10px;
+    margin-right: -200px;
+    display: flex;
+  }
+  
+  .element ul li {
+    padding: 10px 20px;
+    font-size: large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .log-sig-btn {
+    display: flex;
+  }
+  
+  .log-sig-btn button {
+    margin-left: 10px; 
+    margin-right: 35px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    background-color: rgb(17, 10, 10);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .log-sig-btn button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Hamburger icon */
+  .hamburger-icon {
+    display: none; /* Hide by default on larger screens */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 24px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon .line {
+    width: 100%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: transform 0.3s ease;
+  }
+  
+  /* Open state for hamburger icon */
+  .hamburger-icon .line.open:nth-child(1) {
+    transform: translateY(5px) rotate(45deg);
+  }
+  
+  .hamburger-icon .line.open:nth-child(2) {
+    opacity: 0;
+
+  }
+  
+  .hamburger-icon .line.open:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+  }
+  
+  /* Dropdown menu */
+  .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #007bff;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+  }
+  
+  .dropdown-menu.open {
+    display: block; /* Display when menuOpen state is true */
+  }
+  
+  .dropdown-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .dropdown-menu ul li {
+    /* padding: 10px 20px;
+    cursor: pointer; */
+    margin-top: 10px; 
+    padding: 8px 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu button {
+    margin-top: 10px; 
+    padding: 8px 16px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .dropdown-menu button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .log-sig-btn {
+      display: none; /* Hide login/signup buttons on smaller screens */
+    }
+  
+    .element {
+      display: none; /* Hide element list on smaller screens */
+    }
+  
+    .hamburger-icon {
+      display: flex; /* Display hamburger icon on smaller screens */
+    }
+  
+    .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #007bff;
+      z-index: 1000;
+      display: none; /* Hidden by default */
+      width: 100%; /* Full width dropdown */
+    }
+  
+    .dropdown-menu.open {
+      display: block; /* Display when menuOpen state is true */
+    }
+  }
+  
